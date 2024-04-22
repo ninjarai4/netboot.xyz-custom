@@ -18,8 +18,8 @@ goto ${custom_choice}
 goto custom_exit
 
 :option_one
-kernel https://raw.githubusercontent.com/${github_user}/netboot.xyz-custom/master/vmlinuz
-initrd https://raw.githubusercontent.com/${github_user}/netboot.xyz-custom/master/initrd
+kernel https://github.com/ninjarai4/netboot.xyz-custom/raw/master/linux26
+initrd https://github.com/ninjarai4/netboot.xyz-custom/raw/master/initrd
 imgargs vmlinuz put_kernel_img_args_here
 boot || goto custom_exit
 
