@@ -53,5 +53,5 @@ choose --default normal --timeout 5000 target && goto ${target}
     set kernel "https://github.com/ninjarai4/netboot.xyz-custom/raw/master/linux26 ${opts} splash=silent"
     goto init
 :init
-initrd ${webserver}/proxmox/${pveversion}/initrd
+initrd https://github.com/ninjarai4/netboot.xyz-custom/raw/master/initrd
 chain ${kernel}
